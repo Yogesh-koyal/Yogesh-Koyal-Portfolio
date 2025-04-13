@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<div id="header">
+    <div class="container">
+<!------------------------------------------------nav bar logo and options-------------------------------------------------->
+        <nav>
+        <img src="images/logo.png" class="logo">
+        <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>          <!--herf="#ids to go on given sections"--------------------------->
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+<!-----------------------------------------------------About in Small but in big words--------------------------------------->
+        <div class="header-text">
+            <p>Web/App Designer</p>
+            <h1>Hi, I'm<br> <span>Yogesh Koyal</span><br>From India</h1>
+        </div>
+
+    </div>
+</div>
+<!--------------------------------------------------------My information------------------------------------------------------>
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Hello, My name is Yogesh Koyal. I am from District Aligarh Utter Pradesh India. I have completed my MCA(masters in Computer Aplication) from Galgotias University Noida. During My masters degree i have a good foundation in programming languages like C , Java , java Script , many other languages like Html, Css, Python. Now i am focusing on full stack development. </P>
+                    <div class="tab-titles">
+                    
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p> <!--onclick for shows content -->
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>       <!--after click on tab links-->
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('project')">Projects</p>
+
+                 </div>
+                 <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                        <li><span>Web Development</span><br>Web App Development</li>
+                        <li><span>App Development</span><br>Bulding Android?ios Apps</li>
+                    </ul>
+                 </div>
+                 <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2023</span><br>Internship at Aws Academy.</li>
+                        <li><span>2024</span><br>Make a College Project, Stock price prediction</li>
+                        <li><span>2024</span><br>Self Amazone Clone Project Using Html, Css, Javascript</li>
+                    </ul>
+                 </div>
+                 <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2024</span><br>MCA from Galgotias University Noida</li>
+                        <li><span>2024</span><br>AI/ML Internship at AWS Academy</li>
+                        <li><span>2022</span><br>BA from Dr Bhimrao Ambedkar University Agra</li>
+                    </ul>
+                 </div>
+                 <div class="tab-contents" id="project">
+                    <ul>
+                        <li><span>Amazone Clone</span><br><i class="fa-solid fa-arrow-right"></i><a href="https://yogesh-koyal.github.io/Yogesh-Amazone-Clone/">  Click Here</a></li>
+                        <li><span>Tic-Tac-Toa Game</span><br><i class="fa-solid fa-arrow-right"></i><a href="https://yogesh-koyal.github.io/Yogesh-T-T-T/">  Click Here</a></li>
+                        <li><span>Stone-Paper-Scissors Game</span><br><i class="fa-solid fa-arrow-right"></i><a href="https://yogesh-koyal.github.io/Yogesh-Koyal-S-P-S/">  Click Here</a></li>
+                    </ul>
+                 </div>
+                </div>
+        </div>
+    </div>
+</div>
+<!--------------------------------------------------------------Services--------------------------------------------------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>in my portfolio, you will find a diverse array of projects that highlight my ability to work across different industries and styles. </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>UI/UX Design</h2>
+                <p>Whether you're looking to build a new app, redesign a website, or enhance an existing platform, my UI/UX design services are tailored to deliver an experience that your users will love. </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>App Design</h2>
+                <p>From initial concept and wireframing to high-fidelity design and prototyping, I work closely with you to ensure the final product meets your business objectives and exceeds user expectations. </p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div> 
+<!---------------------------------------------------------------Portfolio------------------------------------------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>The app connects you to the talented people around the world. Downlod it from play store</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Music App</h3>
+                    <p>The app connects you to the talented people around the world. Downlod it from play store</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Online Shoping Store</h3>
+                    <p>The app connects you to the talented people around the world. Downlod it from play store</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>       <!--See more botton-->
+    </div>
+</div>
+<!-----------------------------------------------------------Contact------------------------------------------------------>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> Yogesh20213754@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i> 8126002277,8445652250</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/share/1YwsWximSc/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://x.com/YKoyal001?t=H3LjZ5snUR0N1RKkaXVBlQ&s=09"><i class="fa-brands fa-square-twitter"></i></a>
+                    <a href="https://www.instagram.com/yogeshkoyal001?igsh=MTdkejF6aG5vaTF3"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/yogesh-koyal-516b94263?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="images/my-cv.pdf" download class="btn btn2">Downlod CV</a> <!--It is use for downloding cv-->
+            </div>
+            <div class="contact-right"> 
+               <form name="submit-to-google-sheet">
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="Email" placeholder="Your Email" required >
+                <textarea name="Message" rows="6" placeholder="Your message" ></textarea>
+                <button type="submit" class="btn btn2">submit</button>
+               </form>
+               <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright <i class="fa-regular fa-copyright"></i> Yogesh. Made with<i class="fa-solid fa-heart"></i> by Yogesh koyal</p>
+    </div>
+</div>
+<!--------------------------------------------------------java scripe------------------------------------------------------->
+<script>
+ /*------------------------------------------------------java script for about section-------------------------------------*/
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){                         /* for hiding content and underline from tab links*/      
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");   /*for showing the underline on clicking on tab links*/
+        document.getElementById(tabname).classList.add("active-tab"); /* for showing the details on clicking on tab links*/   
+    }
+
+</script>
+<!--------------------------------------------------------sidemenu java script----------------------------------------->
+<script>
+    
+    var sidemenu = document.getElementById("sidemenu");
+    
+    function openmenu(){
+        sidemenu.style.right ="0";
+    }
+    function closemenu(){
+        sidemenu.style.right ="-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbw2EirxixC18y3GNG_yg8AtlqoqVRb_9BE8SaLI8qwN04id9eZD8n7B4NTxQ6tFs_Ho/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML =""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
